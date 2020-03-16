@@ -1,0 +1,20 @@
+{
+  "name": "nodejs_project",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "postinstall": "cd demo &&npm install && cd ../ && cd app/react-front && npm install",
+    "demo": "\"concurrently \"node index \" \" cd demo && node index\""
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "concurrently": "^5.1.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.6",
+    "mongoose": "^5.7.1",
+    "mongoose-unique-validator": "^2.0.3"
+  }
+}
