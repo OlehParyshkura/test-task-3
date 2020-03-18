@@ -4,14 +4,14 @@
   "main": "index.js",
   "scripts": {
     "start": "node index",
-    "postinstall": "cd demo &&npm install && cd ../ && cd app/react-front && npm install",
-    "demo": "\"concurrently \"node index \" \" cd demo && node index\""
+    "postinstall": " cd app/react-front && npm install"
   },
   "keywords": [],
   "license": "ISC",
   "dependencies": {
     "colors": "^1.4.0",
     "concurrently": "^5.1.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-fileupload": "^1.1.6",
     "mongoose": "^5.7.1",
