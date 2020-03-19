@@ -21,6 +21,7 @@ module.exports.getFilms = (query) => {
     limit = parseInt(limit)
     page--;
     return Film.find(getFindProps(query))
+        .collation({locale:'uk'})
         .sort({
             [sortBy]: order
         })
